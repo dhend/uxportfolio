@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shawn's Portfolio</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type = "text/css" href="format.css"></style>
+</head>
+<body>
+ 	<div class="container">
+ 		<div class="nav">
+			<a href="#">My Logo</a>
+			<div class = "topnav-right">
+				<a href="index.html">About Me</a>
+				<a href="project_index.html">Projects</a>
+				<a href="ux_cv.pdf" target="_blank">CV</a>
+			</div>
+ 		</div>
+	</div>
+	<div class="advertise_caption">
+		<div class="container">
+			<div class="row">
+				<div class="caption">
+					<h1>Visualization of Obesity Clinical Trials</h1>
+					<p>Data Visualization Project</p>
+				</div>			
+			</div>
+		</div>		
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Motivation</h2>
+				<ul class="list">
+					<li>The obeisty rate increases significantly each year in the U.S.</li>
+					<li>Obesity has become a serious health issue facing the U.S.</li>
+					<li>We're trying to use a visualization tool to display obesity rate and related clinical trial information from 2003 to 2017.</li>
+				</ul>
+				<h4 class="caption-left">We're trying to answer following questions:</h3>
+				<ul class="list">
+					<li>What is the distribution of obesity trials in the United States?</li>
+					<ul>
+						<li>Which state in the United States has the most clinical trials of obesity and which is the least?</li>
+						<li>Is there any difference in clinical trials of obesity in different states? If there are differences, what are those differences?</li>
+					</ul>
+					<li>What are the conditions that are frequently studied together with obesity?</li>
+					<li>What are the interventions used?</li>
+					<li>How did trials characters change over time? Are there any trends shown by the visualization?</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Data Collection</h2>
+				<ul class="list">
+					<li>Obesity rate by state</li>
+					<p style="color: gray;">The data on obesity rate by states from 2003 to 2017 are retrieved from CDC.</p>
+					<li>State demographic data</li>
+					<p style="color: gray;">State demographic data include median household income, poverty rate, and state
+					population from 2003 to 2017. The date is downloaded from US census bureau.</p>
+					<li>Obesity Clinical Trials data</li>
+					<p style="color: gray;">Obtained from clinicaltrials.gov, which is a database of privately and publicly funded clinical studies conducted around the world managed by the U.S. National Library of Medicine.</p>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Design Process</h2>
+				<!-- <p class="text-left">To display the obesity rate and related clinical trial information in one page and also make that information easy to compare and analyze, we plan to use a timeline to separate the each year’s information. To visually separate the obesity rate and clinical trial data, we designed an interactive timeline in the middle of the page. Above the timeline, we used a choropleth and a line chart to display the obesity rate in each state and in different years. Below the timeline, we used different individual charts to display clinical information from different types.</p> -->
+			</div>
+			<div class="section">
+				<div class="row">
+				<div class="col-sm-6">
+					<img src="source/obesityclinic/layout_1.jpg">
+					<p class="subtitle">The layout of the visualization</p>
+				</div>
+				<div class="col-sm-6">
+					<img src="source/obesityclinic/layout_2.jpg">
+					<p class="subtitle">The details of the visualization</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Design Justification</h2>
+				<p class="text-left">We designed a choropleth and a multi-series line chart to display obesity rate information. Then, we used individual charts to display clinical trial information.</p>
+				<ul class="list">
+					<li>Colorblind friendly</li>
+					<p style="color: gray;">We used colorbrewer when choosing the color schema for the choropleth, to make it colorblind friendly.</p>
+					<li>Stability of graph</li>
+					<p style="color: gray;">When hovering on the timeline, the choropleth and the clinical trial charts can change smoothly and simultaneously to show the corresponding information in the specific year, making it easier to explore and analyze the data.</p>
+					<li>Appropriate chart type selection</li>
+					<p style="color: gray;">Most of the clinical trial information are categorical variables. According to the number of categories in each variable, we selected appropriate charts to display the information, making it easier to read and distinguish between different categories.</p>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">High Fedelity Prototype</h2>
+				<div class="interactive-img">
+					<img src="source/obesityclinic/prototype.png"class="img">
+					<div class="img-middle">
+						<a href="https://superemma.github.io/h517Project2/" target="_blank">
+    					<button class="img-text">Click Here</button>
+    					</a>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Findings</h2>
+				<ul class="list">
+					<li>The amount of obesity-related clinical trial is increasing as time passing by, as well as the obesity rate. By exploring the choropleth, we found that Florida had the most obesity-related clinical trial among other states.</li>
+					<li>We can also notice that there is a difference in the number of clinical trials in different states. It seems that more clinical trials are on the east side of the country relative to the west side of the country.</li>
+					<li>To observe the Co-studied condition graph, we could see that diabetes has been studied most relevant to obesity in 2017, following by metabolism and nutrition disorder.</li>
+					<li>The intervention used most is behavioral action from 2003 to 2017.</li>
+					<li>For funding source, we found that NIH is the main funding source for all the clinical trial studies except others.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Reflection</h2>
+				<ul class="list">
+					<li>By interacting with the visualized product, we can answer many questions more efficiently and effectively.</li>
+					<li>Interactive visualization provides researchers and users a more direct way to explore and analyze the big deal of data.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="advertise">
+		<div class="container">
+			<div class="section">
+				<h2 class="caption-left">Project Info</h2>
+				<h3 class="caption-left">Members:</h3>
+				<ul class="list">
+					<li>Shawn Dai</li>
+					<p style="color:gray;">Interface Desgin, Coding</p>
+					<li>Enming Zhang</li>
+					<p style="color:gray;">Data Collection, Coding</p>
+				</ul>
+				<h3 class="caption-left">Time Period:</h3>
+				<p class="text-left">2018 Fall</p>
+			</div>
+		</div>
+	</div>
+	<div class = "advertise" id="project_img">
+		<div class="container">
+			<div class="row">
+				<div class = "col-lg-12" style="background-color: gray;">
+				</div>
+			</div>
+			<div class="row">
+				<div class = "col-lg-12" style="padding:2em;">
+				</div>
+			</div>
+			<div class="section">
+				<div class="row">
+					<div class="column">
+						<div class="content">
+							<a href="persuasivedoctor.html"><img src="sample.png" class="responsive" alt="img"></a>
+							<p class="subtitle">Persuasive Virtual Doctor (2016-2018)</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<a href="accessibilityse.html"><img src="sample.png" class="responsive"></a>
+							<p class="subtitle">Disability Discrimination in the Sharing Economy Platforms (2018)</p>
+						</div>
+					</div>
+					<div class="column">
+						<div class="content">
+							<a href="accessibilityse_2.html"><img src="sample.png" class="responsive"></a>
+							<p class="subtitle">Disability Disclosure in the Sharing Economy Platforms (2019 Spring)</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<div class="content">
+							<a href="obesityclinic.html"><img src="sample.png" class="responsive" alt="img"></a>
+							<p class="subtitle">Visualization of Obesity Clinical Trials (2018 Fall)</p>
+						</div>
+					</div>
+					<div class="column" style="display: none">
+						<div class="content">
+							<a href="#"><img src="sample.png" class="responsive"></a>
+							<p class="subtitle">TBD</p>
+						</div>
+					</div>
+					<div class="column" style="display: none">
+						<div class="content">
+							<a href="#"><img src="sample.png" class="responsive"></a>
+							<p class="subtitle">TBD</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>
